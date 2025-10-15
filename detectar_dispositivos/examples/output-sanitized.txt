@@ -1,0 +1,17 @@
+# detectar_dispositivos — ejemplo de salida sanitizada
+# Fecha: 2025-10-15
+# Nota: IPs y datos sensibles reemplazados por [REDACTED_IP] o [REDACTED_VENDOR]
+
+IP              | FABRICANTE                     | OS (approx)    | PUERTOS ABIERTOS     | TIPO
+-----------------------------------------------------------------------------------------------------
+[REDACTED_IP]   | Cisco Systems                  | Desconocido    | 22,443               | Router
+[REDACTED_IP]   | Hewlett Packard Enterprise     | Linux           | 22,9100              | Impresora
+[REDACTED_IP]   | Samsung Electronics            | Android         | 8008,8009            | Smart TV
+[REDACTED_IP]   | Dell Inc.                      | Windows 10      | 445,3389             | PC Windows
+[REDACTED_IP]   | Raspberry Pi Foundation        | Linux           | 22                   | Servidor Linux
+[REDACTED_IP]   | Unknown Vendor                 | Desconocido     | Ninguno              | Desconocido
+
+Resumen:
+- Hosts detectados: 6
+- Hosts con puertos abiertos (muestra): 4
+- Recomendación: revisar impresoras (9100), asegurar RDP/SMB y segmentar la red de IoT.
